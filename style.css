@@ -2,4 +2,266 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    outline-offset: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s linear;
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #0c1013;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+}
+.nav-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.green-text {
+    color:#29e9bc;
+}
+.white-text {
+    color: white;
+}
+.nav-menu {
+    display: flex;
+    gap: 80px; 
+    list-style: none;
+    color: white;
+}
+a{
+    color: white;
+    font-size: 18px;
+}
+.nav-menu li{
+    position:relative ;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.nav-menu li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #29e9bc;
+}
+.nav-menu li:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background-color: #0c1013;
+    
+}
+
+.header-left {
+    flex: 1; 
+    padding: 20px; 
+}
+
+
+.header-right {
+    flex: 1; 
+    padding: 20px; 
+    text-align: left;  
+    color: white;
+    font-size: 48px;
+    
+}
+
+.header-left img {
+    max-width: 800px;
+    height: 500px; 
+    margin-top: 100px;
+}
+
+.typed-cursor {
+    color: white;
+}
+
+.typing {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation: typing 3s steps(40, end), blink-caret 0.7s step-end infinite;
+    color: #29e9bc;
+}
+
+.text-2{
+    font-weight: bolder;
+}
+.btn-cv {
+    position: relative;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    color: #29e9bc;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 1px solid #29e9bc;
+    padding: 20px;
+
+}
+.border_bottom {
+    font-size: 30px;
+    color: #29e9bc;
+    border-bottom: 1px solid #29e9bc;
+    background-color: black;
+    display: inline-block; /* Alterado para display: inline-block; */
+    padding: 0 10px; /* Adicione um espaçamento opcional */
+}
+
+.about{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 2px;
+    line-height: 30px;
+    height: 500px;
+}
+.about-text{
+    margin-top: 100px;
+}
+.text-title{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+section a{
+    position: relative;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    color: #29e9bc;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 1px solid #29e9bc;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+/* Estilos CSS para a seção de serviços */
+.services {
+    text-align: center;
+    background-color: black;
+}
+.services h2 {
+    width: 300px; /* Largura desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+
+.services_container .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    margin-top: 100px;
+    background-color: black;
+}
+
+.services_container .cards .card {
+    background-color: #29e9bc;
+    padding: 1.5rem 1rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    position: relative;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.sbox i {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    color: var(--bg);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 14px;
+    transition: all 1s;
+}
+
+.sbox h3 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.sbox p {
+    margin: 1.2rem 0;
+    color: black;
+}
+
+.sbox a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.3rem 1rem;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.sbox a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.services_container .cards .card .sbox img {
+    width: 50px;
+    height: 50px;
+}
+
+.services_container .cards .card::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.services_container .cards .card:hover::after {
+    transform: rotate(13deg);
+}
+.services h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }

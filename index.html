@@ -7,13 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+
     <title>Portfólio | Vinicius Drumond</title>
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <a href="index.html"><h4>
-                <span>Vinicius Drumond</span>
+                <span class="green-text">Vinicius</span>
+                <span class="white-text">Drumond</span>
             </h4></a>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
@@ -29,18 +33,214 @@
     <header>
         <div class="header-container">
             <div class="header-left">
-                <img src="" alt="">
+                <img src="foto_pessoal.jpg" alt="">
             </div>
             <div class="header-right">
                 <div class="text-1">Olá, meu nome é</div>
                 <div class="text-2">Vinicius Drumond</div>
-                <div class="text-3">E sou <span class="typing">Desenvolvedor Web</span>
-                <span class="typed-cursor"></span>
+                <div class="text-3">E sou <span class="typing"></span>
             </div>
-            <a href="https://www.linkedin.com/in/viniciusdrumonddt" target="_blank" class="btn">Fale comigo</a>
+            <a href="https://www.linkedin.com/in/vinicius-drumond-03510a280/" target="_blank" class="btn-cv">Fale comigo</a>
             </div>
         </div>
     </header>
+    <section class="about" id="about">
+        <h2 class="border_bottom">Sobre mim</h2>
+        <div class="container about_container">
+            <div class="about-text">
+                <div class="text">
+                   <span class="text-title"> Eu sou Vinicius Drumond Desenvolvedor Web,</span>
+                </div>
+                <p>Acabo de me formar Desenvolvedor Front-End pela Trybe e estou no meio do meu curso de Back-End.
+                    Além disso, estou retornando agora há Universidade Federal de Juiz de Fora para concluir meu curso de Análise e 
+                    Desenvolvimento de Sistemas. Fora, é claro, que estou sempre buscando aprimorar minhas habilidades com cursos profissionalizantes
+                    em plataformas on-line.
+                    Conhecimentos em JS, React, HTML & CSS, TS, Linux, Unix & Shell, Bootstrap, Testes Unitários, Figma e Docker.
+                     Sempre tive muita afinidade com a área de tecnologia. Lembro até hoje de instalar e configurar o modem da minha internet Banda Larga aos 8 anos de 
+                    idade completamente sozinho.</p>
+                <a href="https://drive.google.com/file/d/1Jhx0_s1yZxJ2DFvUOM96cYyhxYSh5aeD/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <div class="services" id="service">
+        <h2 class="border_bottom">Meus trabalhos</h2>
+        <div class="container services_container">
+            <div class="cards">
+                <div class="card">
+                    <div class="sbox">
+                       <img src="icons8-front-end-64.png" alt="">
+                        <h3>Frontend Development</h3>
+                        <p>O profissional desenvolvedor front-end é o responsável por colocar em prática,
+                             através de códigos, o design de um site ou interface. O desenvolvimento front-end implementa esse design 
+                             através de códigos, como HTML, CSS e JavaScript.</p>
+                        <!-- <a href="#">Saber mais</a> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sbox">
+                        <img src="icons8-web-design-90.png" alt="">
+                        <h3>UI/UX Design</h3>
+                        <p>O UX Design é o campo profissional em que pessoas desenvolvem a experiência de 
+                            interações com determinada solução. O comprometimento máximo do UX designer é 
+                            estudar a experiência de pessoas usuárias e entender suas motivações.</p>
+                        <!-- <a href="#">Saber mais</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="skills" id="skills">
+        <div class="new">
+            <h2 class="border_bottom">Minhas principais habilidades</h2>
+        </div>
+        <div class="container skills_container">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line jquery">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>React</span>
+                </div>
+                <div class="progress-line python">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>Angular</span>
+                </div>
+                <div class="progress-line mysql">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container portfolio_container" id="portfolio">
+        <h2 class="border_bottom">Meu Portofolio</h2>
+        <h3>Churrascou - Site Proprio</h3>
+        <div class="gallery">
+        
+        </div>
+        <h3>Nike Rebuild Site</h3>
+        <div class="gallery">
+           
+        </div>
+    </div>
+    <div class="courses" id="courses">
+        <h2 class="border_bottom">
+            Meus cursos populares
+        </h2>
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src='' alt="Course 1">
+                </div>
+                <div class="course_info">
+                    <h4>Trybe</h4>
+                    <p></p>
+                 
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src='' alt="Course 2">
+                </div>
+                <div class="course_info">
+                    <h4>Analise e desenvolvimento de sistemas</h4>
+                    <p>A faculdade de Tecnologia e Análise e Desenvolvimento de Sistemas é uma graduação
+                         de nível tecnológico que torna o estudante apto a projetar, testar, implantar e 
+                         gerenciar sistemas e recursos que envolvem Hardware e Software.</p>
+                    <!-- <a href="#" class="btn">Saiba mais</a> -->
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="image/dio.png" alt="Course 3">
+                </div>
+                <div class="course_info">
+                    <h4>Varios cursos profissionalizantes</h4>
+                    <p>Potencializamos o seu talento e aprimoramos as suas habilidades de pensamento 
+                        computacional e resolução de desafios reais através de experiências práticas de
+                         codificação em nossa plataforma personalizada e exclusiva.</p>
+                    <!-- <a href="#" class="btn">Saiba mais</a> -->
+                </div>
+            </article>
+
+        </div>
+    </div>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo">
+                    <h4>Matheus</h4>
+                </a>
+                <p>Esse é meu portifolio! Sou Desenvolvedor de Software...Front-End, 
+                    Fique a vontade para navegar e saber sobre meu curriculo.
+                    Adoro desafios e acredito na transformação do mundo com o poder da informação.</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Navegação</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#courses">Cursos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy &amp; Policy</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_4">
+                <h4 id="contact">Meus contatos</h4>
+                <div>
+                    <p class="mail">viniciusdduarte@outlook.com</p>
+                </div>
+                <ul class="footer_social">
+                    <li><a href="https://github.com/vinidduarte" target="_blank"> </a></li>
+                    <li><a href="https://www.instagram.com/viniciusdrumondd/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a></li>
+                    <li><a href="https://www.linkedin.com/in/vinicius-drumond-03510a280/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a></li>
+    
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright © desenvolvedor Vinicius Drumond</small>
+        </div>
+    </footer>
+    <script src="src/main.js"></script>
 </body>
+
 </html>
