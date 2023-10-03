@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const typed = new Typed(".typing", options);
 });
+
